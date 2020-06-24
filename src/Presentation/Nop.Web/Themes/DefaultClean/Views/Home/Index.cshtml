@@ -11,7 +11,6 @@
         <div>
             @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HomepageTop })
         </div>
-        @await Component.InvokeAsync("TopicBlock", new { systemName = "HomepageText" })
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HomepageBeforeCategories })
         @*@await Component.InvokeAsync("HomepageCategories")
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HomepageBeforeProducts })*@

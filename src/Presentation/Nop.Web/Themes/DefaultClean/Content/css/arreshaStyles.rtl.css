@@ -3,3 +3,7 @@
 .post-body .short-description p {
   text-align: right;
 }
+.dropdown-cont {
+  margin-left: 16px !important;
+  margin-right:0px !important;
+}
