@@ -1,98 +1,50 @@
 ﻿@model HeaderLinksModel
 @inject Nop.Core.IWebHelper webHelper
 
-<script>
-    function showMenuLinks() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
-
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function (event) {
-        if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-            }
-        }
-    }
-</script>
 <div class="header-links">
-
     <ul>
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderLinksBefore })
-
         @if (Model.IsAuthenticated)
         {
             <li><a href="@Url.RouteUrl("CustomerInfo")" class="ico-account">@T("Account.MyAccount")@*@Model.CustomerName*@</a></li>
+            <li><a href="@Url.RouteUrl("Logout")" class="ico-logout">@T("Account.Logout")</a></li>
         }
         else
         {
-            var returnUrl = Context.Request.Query.TryGetValue("returnUrl", out var url) && !StringValues.IsNullOrEmpty(url)
+            var returnUrl = Context.Request.Query.TryGetValue("returnUrl", out var url) && !StringValues.IsNullOrEmpty(url) 
                 ? url.ToString()
                 : webHelper.GetRawUrl(Context.Request);
 
+            <li><a href="@Url.RouteUrl("Register", new { returnUrl })" class="ico-register">@T("Account.Register")</a></li>
             <li><a href="@Url.RouteUrl("Login", new { returnUrl })" class="ico-login">@T("Account.Login")</a></li>
         }
-        <li class="dropdown-cont">
-            <div class="dropdown">
-                <button onclick="showMenuLinks()" class="dropbtn">
-                    <div class="display-flex align-items-center custom-icon">
-                        <div class="m-circle"></div>
-                        <div class="m-circle"></div>
-
-                        <div class="m-circle"></div>
-
-                    </div>
-                </button>
-                <div id="myDropdown" class="dropdown-content">
-                    @if (Model.IsAuthenticated)
-                    {
-                        <div><a href="@Url.RouteUrl("Logout")" class="ico-logout">@T("Account.Logout")</a></div>
-                    }
-                    else
-                    {
-                        var returnUrl = Context.Request.Query.TryGetValue("returnUrl", out var url) && !StringValues.IsNullOrEmpty(url)
-                            ? url.ToString()
-                            : webHelper.GetRawUrl(Context.Request);
-
-                        <div><a href="@Url.RouteUrl("Register", new { returnUrl })" class="ico-register">@T("Account.Register")</a></div>
-                    }
-                    @if (Model.AllowPrivateMessages)
-                    {
-                        <div>
-                            <a href="@Url.RouteUrl("PrivateMessages", new { tab = "" })" class="ico-inbox">
-                                <span class="inbox-label">@T("PrivateMessages.Inbox")</span>
-                                <span class="inbox-unread">@Model.UnreadPrivateMessages</span>
-                            </a>
-                        </div>
-                    }
-                    @if (Model.WishlistEnabled)
-                    {
-                        <div>
-                            <a href="@Url.RouteUrl("Wishlist")" class="ico-wishlist">
-                                <span class="wishlist-label">@T("Wishlist")</span>
-                                <span class="wishlist-qty">@T("Wishlist.HeaderQuantity", Model.WishlistItems)</span>
-                            </a>
-                        </div>
-                    }
-
-                    @if (Model.ShoppingCartEnabled)
-                    {
-                        <div id="topcartlink">
-                            <a href="@Url.RouteUrl("ShoppingCart")" class="ico-cart">
-                                <span class="cart-label">@T("ShoppingCart")</span>
-                                <span class="cart-qty">@T("ShoppingCart.HeaderQuantity", Model.ShoppingCartItems)</span>
-                            </a>
-                        </div>
-                    }
-                </div>
-            </div>
-        </li>
-
+        @if (Model.AllowPrivateMessages)
+        {
+            <li>
+                <a href="@Url.RouteUrl("PrivateMessages", new { tab = "" })" class="ico-inbox">
+                    <span class="inbox-label">@T("PrivateMessages.Inbox")</span>
+                    <span class="inbox-unread">@Model.UnreadPrivateMessages</span>
+                </a>
+            </li>
+        }
+        @if (Model.WishlistEnabled)
+        {
+            <li>
+                <a href="@Url.RouteUrl("Wishlist")" class="ico-wishlist">
+                    <span class="wishlist-label">@T("Wishlist")</span>
+                    <span class="wishlist-qty">@T("Wishlist.HeaderQuantity", Model.WishlistItems)</span>
+                </a>
+            </li>
+        }
+        @if (Model.ShoppingCartEnabled)
+        {
+            <li id="topcartlink">
+                <a href="@Url.RouteUrl("ShoppingCart")" class="ico-cart">
+                    <span class="cart-label">@T("ShoppingCart")</span>
+                    <span class="cart-qty">@T("ShoppingCart.HeaderQuantity", Model.ShoppingCartItems)</span>
+                </a>
+            </li>
+        }
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderLinksAfter })
     </ul>
     @if (Model.AllowPrivateMessages && !string.IsNullOrEmpty(Model.AlertMessage))

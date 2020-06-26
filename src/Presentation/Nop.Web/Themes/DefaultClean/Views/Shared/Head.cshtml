@@ -12,16 +12,19 @@
     if (supportRtl)
     {
         Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/arreshaStyles.rtl.css");
+        Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/arreshaTheme.css");
 
         Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/arreshaStyles.css");
         Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/styles.rtl.css");
-         
+
     }
     else
     {
-         Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/arreshaStyles.css");
+        Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/arreshaTheme.css");
+
+        Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/arreshaStyles.css");
         Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/styles.css");
-        
+
 
     }
     //add jQuery UI css file

@@ -1,4 +1,6 @@
 ﻿@model TopMenuModel
+@using Nop.Core
+@inject IWorkContext workContext
     <ul class="top-menu notmobile">
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMenuBefore })
         @if (Model.DisplayHomepageMenuItem)
@@ -49,6 +51,10 @@
         }
         <li><a href="@Url.RouteUrl("BlogByTag", new {tag = "wood"})">@T("WoodBlog")</a></li>
         <li><a href="@Url.RouteUrl("BlogByTag", new {tag = "tech"})">@T("ComputerAndTech")</a></li>
+        @if (workContext.WorkingLanguage.Rtl)
+        {
+            <li><a href="@Url.RouteUrl("Topic",new { SeName ="youtubelist" })">قوائم يوتيوب</a></li>
+        }
 
 
 
@@ -106,6 +112,8 @@
         {
             <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a></li>
         }
+        <li><a href="@Url.RouteUrl("BlogByTag", new {tag = "wood"})">@T("WoodBlog")</a></li>
+        <li><a href="@Url.RouteUrl("BlogByTag", new {tag = "tech"})">@T("ComputerAndTech")</a></li>
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.MobHeaderMenuAfter })
     </ul>
 

@@ -17,7 +17,7 @@
     @await Component.InvokeAsync("BlogTags")
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.LeftSideColumnBlogAfter })
 }*@
-<div class="page blogpost-page">
+<div class="page blogpost-page blog-wrapper">
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.BlogPostPageTop, additionalData = Model })
     <div class="blog-title">
         <h1>@Model.Title</h1>
@@ -142,3 +142,4 @@
     </div>
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.BlogPostPageBottom, additionalData = Model })
 </div>
+
