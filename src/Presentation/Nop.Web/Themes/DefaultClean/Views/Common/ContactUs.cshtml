@@ -12,8 +12,14 @@
         <h1>@T("PageTitle.ContactUs")</h1>
     </div>
     <div class="page-body">
-        @*@await Component.InvokeAsync("TopicBlock", new { systemName = "ContactUs" })
-        @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContactUsTop })*@
+
+        @await Component.InvokeAsync("TopicBlock", new { systemName = "ContactUs" })
+        @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContactUsTop })
+        <div class="display-flex justify-content-center contact-us-news">
+            @await Component.InvokeAsync("NewsletterBox")
+
+        </div>
+
         @if (Model.SuccessfullySent)
         {
             <div class="result">
@@ -67,8 +73,9 @@
                     <input type="submit" name="send-email" class="button-1 contact-us-button" value="@T("ContactUs.Button")" />
                 </div>
             </form>
+
         }
-        <hr class="arresha-hr"/>
+        <hr class="arresha-hr" />
         <h2 class="text-center margin-top-l margin-bottom-l">Find me on Social Media</h2>
         @await Component.InvokeAsync("SocialLinks")
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContactUsBottom })
