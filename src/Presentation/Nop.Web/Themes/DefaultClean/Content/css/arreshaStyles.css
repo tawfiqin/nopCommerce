@@ -256,8 +256,15 @@ body {
     padding:0;
     margin-bottom:8px;
 }
-.post-body .short-description{
-
+.blog-style1 p{
+    text-align:left;
+    line-height:2em;
+}
+.post-body .short-description {
+}
+.blog-title h1 {
+  font-size: 2.4em;
+  color: #047cc5;
 }
 .short-description {
   font-size: 1.2em;
@@ -267,6 +274,7 @@ body {
 .post-body .short-description p{
     text-align:left;
     margin-top:0;
+    font-size:.8em;
 }
 .post-body:hover .short-description p {
   color: #4ab2f1;
@@ -434,12 +442,111 @@ body {
     padding: 10px;
     font-size: 1.4em;
   }
-  /*------------------ Media quires ---------------*/
+  /*------------------ Social Links ----------------*/
+.follow-us .social a {
+  display: block;
+  width: 38px;
+  height: 38px;
+  background-size: cover;
+  font-size: 0;
+  background-repeat: no-repeat;
+}
+
+.follow-us .social .facebook a {
+  background-image: url('../images/facebookicon.svg');
+  background-position:initial;
+}
+
+.follow-us .social .twitter a {
+  background-image: url('../images/twittericon.svg');
+  background-position: initial;
+}
+
+.follow-us .social .rss a {
+  background-image: url('../images/social-sprite.png');
+  
+}
+
+.follow-us .social .youtube a {
+  background-image: url('../images/youtubeIcon.svg');
+  background-position: initial;
+}
+
+.follow-us .social .instagram a {
+  background-image: url('../images/instagramicon.png');
+  background-position: initial;
+}
+.header-logo {
+  text-align: center;
+  margin:0;
+}
+/*-------------- Eu cookie ---------------*/
+
+.eu-cookie-bar-notification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100vw;
+  min-height: 40px;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 0 2px rgba(0,0,0,0.15);
+  background-color: #fff;
+  text-align: center;
+  height:auto;
+  padding:0;
+}
+
+  .eu-cookie-bar-notification .text {
+    line-height: 20px;
+    margin-bottom:0;
+  }
+
+  .eu-cookie-bar-notification button {
+    min-width: 60px;
+    border: none;
+    background-color: #4ab2f1;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #fff;
+    margin:0;
+  }
+
+    .eu-cookie-bar-notification button:hover {
+      background-color: #248ece;
+    }
+
+  .eu-cookie-bar-notification a {
+    display: block;
+    color: #4ab2f1;
+  }
+
+    .eu-cookie-bar-notification a:hover {
+      text-decoration: underline;
+    }
+    /*----------------- Youtube embedded -------*/
+.youtube-frame{
+    width:100%;
+    height:720px;
+}
+.youtube-cont{
+    text-align:center;
+}
+/*------------------ Media quires ---------------*/
 @media (max-width: 1367px) {
   .blog-prev-img {
   }
 }
-
+@media (min-width: 1001px) {
+  .header-lower {
+    justify-content: space-between;
+  }
+  .header-logo {
+      display:block;
+      font-size:initial;
+  }
+}
 @media (max-width: 800px) {
   .justify-content-res {
     justify-content: center;
@@ -462,6 +569,10 @@ body {
       margin: 0;
       padding-top: 0;
     }
+  .header-lower {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 500px) {

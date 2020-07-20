@@ -3,10 +3,59 @@
 .post-body .short-description p {
   text-align: right;
 }
+.post-title {
+  text-align:right;
+}
 .dropdown-cont {
   margin-left: 16px !important;
   margin-right:0px !important;
 }
 .follow-us .social .instagram a{
 
+}
+.blog-style1{
+    direction:rtl;
+}
+.blog-style1 p {
+  text-align: right;
+  line-height: 2em;
+}
+h1, h2, h3, h4, h5, h6{
+    text-align:right;
+}
+.short-description{
+    text-align:right;
+}
+/*------------Social -----------*/
+.follow-us .social a {
+  display: block;
+  width: 38px;
+  height: 38px;
+  background-size: cover;
+  font-size: 0;
+  background-repeat: no-repeat;
+}
+
+.follow-us .social .facebook a {
+  background-image: url('../images/facebookicon.svg');
+  background-position: initial;
+}
+
+.follow-us .social .twitter a {
+  background-image: url('../images/twittericon.svg');
+  background-position: initial;
+}
+
+.follow-us .social .rss a {
+  background-image: url('../images/social-sprite.png');
+}
+
+.follow-us .social .youtube a {
+  background-image: url('../images/youtubeIcon.svg');
+  background-position: initial;
+}
+
+.follow-us .social .instagram a {
+  background-image: url('../images/instagramicon.png');
+  background-position: initial;
 }

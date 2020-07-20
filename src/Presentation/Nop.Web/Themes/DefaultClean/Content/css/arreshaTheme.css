@@ -1,4 +1,12 @@
-/* line 3, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 1, arreshaSCSS/sass/arreshaTheme.scss */
+body {
+  font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #111;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+
+/* line 9, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 {
   /** Reset some basic elements */
   /** Basic styling */
@@ -20,85 +28,69 @@
   /** Page content */
   /** Posts */
   /** Syntax highlighting styles */
-  /*# sourceMappingURL=main.css.map */
 }
-/* line 5, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 11, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 body, .blog-style1 h1, .blog-style1 h2, .blog-style1 h3, .blog-style1 h4, .blog-style1 h5, .blog-style1 h6, .blog-style1 p, .blog-style1 blockquote, .blog-style1 pre, .blog-style1 hr, .blog-style1 dl, .blog-style1 dd, .blog-style1 ol, .blog-style1 ul, .blog-style1 figure {
   margin: 0;
   padding: 0;
 }
-/* line 10, arreshaSCSS/sass/arreshaTheme.scss */
-.blog-style1 body {
-  font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #111;
-  background-color: #fdfdfd;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
-  font-kerning: normal;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-/* line 25, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 18, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 h1, .blog-style1 h2, .blog-style1 h3, .blog-style1 h4, .blog-style1 h5, .blog-style1 h6, .blog-style1 p, .blog-style1 blockquote, .blog-style1 pre, .blog-style1 ul, .blog-style1 ol, .blog-style1 dl, .blog-style1 figure, .blog-style1 .highlight {
   margin-bottom: 15px;
 }
-/* line 29, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 22, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 main {
   display: block;
   /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
-/* line 33, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 26, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 img {
   max-width: 100%;
   vertical-align: middle;
 }
-/* line 38, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 31, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 figure > img {
   display: block;
 }
-/* line 42, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 35, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 figcaption {
   font-size: 14px;
 }
-/* line 46, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 39, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 ul, .blog-style1 ol {
   margin-left: 30px;
 }
-/* line 50, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 43, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 li > ul, .blog-style1 li > ol {
   margin-bottom: 0;
 }
-/* line 54, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 47, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 h1, .blog-style1 h2, .blog-style1 h3, .blog-style1 h4, .blog-style1 h5, .blog-style1 h6 {
   font-weight: 400;
 }
-/* line 58, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 51, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 a {
   color: #2a7ae2;
   text-decoration: none;
 }
-/* line 63, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 56, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 a:visited {
   color: #1756a9;
 }
-/* line 67, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 60, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 a:hover {
   color: #111;
   text-decoration: underline;
 }
-/* line 72, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 65, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .social-media-list a:hover {
   text-decoration: none;
 }
-/* line 76, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 69, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .social-media-list a:hover .username {
   text-decoration: underline;
 }
-/* line 80, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 73, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 blockquote {
   color: #828282;
   border-left: 4px solid #e8e8e8;
@@ -107,34 +99,35 @@
   letter-spacing: -1px;
   font-style: italic;
 }
-/* line 89, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 82, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 blockquote > :last-child {
   margin-bottom: 0;
 }
-/* line 93, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 86, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 pre, .blog-style1 code {
   font-size: 15px;
   border: 1px solid #e8e8e8;
   border-radius: 3px;
   background-color: #f7f7f7;
   white-space: pre-wrap;
+  text-align: left;
 }
-/* line 101, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 95, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 code {
   padding: 1px 5px;
 }
-/* line 105, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 99, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 pre {
   padding: 8px 12px;
   overflow-x: auto;
 }
-/* line 110, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 104, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 pre > code {
   border: 0;
   padding-right: 0;
   padding-left: 0;
 }
-/* line 116, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 110, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .wrapper {
   max-width: -webkit-calc(800px - (30px * 2));
   max-width: calc(800px - (30px * 2));
@@ -144,7 +137,7 @@
   padding-left: 30px;
 }
 @media screen and (max-width: 800px) {
-  /* line 126, arreshaSCSS/sass/arreshaTheme.scss */
+  /* line 120, arreshaSCSS/sass/arreshaTheme.scss */
   .blog-style1 .wrapper {
     max-width: -webkit-calc(800px - (30px));
     max-width: calc(800px - (30px));
@@ -152,13 +145,13 @@
     padding-left: 15px;
   }
 }
-/* line 134, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 128, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .footer-col-wrapper:after, .blog-style1 .wrapper:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 140, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 134, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .svg-icon {
   width: 16px;
   height: 16px;
@@ -167,11 +160,11 @@
   padding-right: 5px;
   vertical-align: text-top;
 }
-/* line 149, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 143, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .social-media-list li + li {
   padding-top: 5px;
 }
-/* line 153, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 147, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 table {
   margin-bottom: 30px;
   width: 100%;
@@ -180,32 +173,32 @@
   border-collapse: collapse;
   border: 1px solid #e8e8e8;
 }
-/* line 162, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 156, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 table tr:nth-child(even) {
   background-color: #f7f7f7;
 }
-/* line 166, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 160, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 table th, .blog-style1 table td {
   padding: 10px 15px;
 }
-/* line 170, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 164, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 table th {
   background-color: #f0f0f0;
   border: 1px solid #dedede;
   border-bottom-color: #c9c9c9;
 }
-/* line 176, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 170, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 table td {
   border: 1px solid #e8e8e8;
 }
-/* line 180, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 174, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .site-header {
   border-top: 5px solid #424242;
   border-bottom: 1px solid #e8e8e8;
   min-height: 55.95px;
   position: relative;
 }
-/* line 187, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 181, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .site-title {
   font-size: 26px;
   font-weight: 300;
@@ -214,34 +207,34 @@
   margin-bottom: 0;
   float: left;
 }
-/* line 196, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 190, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .site-title, .blog-style1 .site-title:visited {
   color: #424242;
 }
-/* line 200, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 194, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .site-nav {
   float: right;
   line-height: 54px;
 }
-/* line 205, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 199, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .site-nav .nav-trigger {
   display: none;
 }
-/* line 209, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 203, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .site-nav .menu-icon {
   display: none;
 }
-/* line 213, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 207, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .site-nav .page-link {
   color: #111;
   line-height: 1.5;
 }
-/* line 218, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 212, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .site-nav .page-link:not(:last-child) {
   margin-right: 20px;
 }
 @media screen and (max-width: 600px) {
-  /* line 223, arreshaSCSS/sass/arreshaTheme.scss */
+  /* line 217, arreshaSCSS/sass/arreshaTheme.scss */
   .blog-style1 .site-nav {
     position: absolute;
     top: 9px;
@@ -251,7 +244,7 @@
     border-radius: 5px;
     text-align: right;
   }
-  /* line 233, arreshaSCSS/sass/arreshaTheme.scss */
+  /* line 227, arreshaSCSS/sass/arreshaTheme.scss */
   .blog-style1 .site-nav label[for="nav-trigger"] {
     display: block;
     float: right;
@@ -260,7 +253,7 @@
     z-index: 2;
     cursor: pointer;
   }
-  /* line 242, arreshaSCSS/sass/arreshaTheme.scss */
+  /* line 236, arreshaSCSS/sass/arreshaTheme.scss */
   .blog-style1 .site-nav .menu-icon {
     display: block;
     float: right;
@@ -270,431 +263,461 @@
     padding-top: 10px;
     text-align: center;
   }
-  /* line 252, arreshaSCSS/sass/arreshaTheme.scss */
+  /* line 246, arreshaSCSS/sass/arreshaTheme.scss */
   .blog-style1 .site-nav .menu-icon > svg {
     fill: #424242;
   }
-  /* line 256, arreshaSCSS/sass/arreshaTheme.scss */
+  /* line 250, arreshaSCSS/sass/arreshaTheme.scss */
   .blog-style1 .site-nav input ~ .trigger {
     clear: both;
     display: none;
   }
-  /* line 261, arreshaSCSS/sass/arreshaTheme.scss */
+  /* line 255, arreshaSCSS/sass/arreshaTheme.scss */
   .blog-style1 .site-nav input:checked ~ .trigger {
     display: block;
     padding-bottom: 5px;
   }
-  /* line 266, arreshaSCSS/sass/arreshaTheme.scss */
+  /* line 260, arreshaSCSS/sass/arreshaTheme.scss */
   .blog-style1 .site-nav .page-link {
     display: block;
     padding: 5px 10px;
     margin-left: 20px;
   }
-  /* line 272, arreshaSCSS/sass/arreshaTheme.scss */
+  /* line 266, arreshaSCSS/sass/arreshaTheme.scss */
   .blog-style1 .site-nav .page-link:not(:last-child) {
     margin-right: 0;
   }
 }
-/* line 277, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 271, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .site-footer {
   border-top: 1px solid #e8e8e8;
   padding: 30px 0;
 }
-/* line 282, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 276, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .footer-heading {
   font-size: 18px;
   margin-bottom: 15px;
 }
-/* line 287, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 281, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .contact-list, .blog-style1 .social-media-list {
   list-style: none;
   margin-left: 0;
 }
-/* line 292, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 286, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .footer-col-wrapper {
   font-size: 15px;
   color: #828282;
   margin-left: -15px;
 }
-/* line 298, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 292, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .footer-col {
   float: left;
   margin-bottom: 15px;
   padding-left: 15px;
 }
-/* line 304, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 298, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .footer-col-1 {
   width: -webkit-calc(35% - (30px / 2));
   width: calc(35% - (30px / 2));
 }
-/* line 309, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 303, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .footer-col-2 {
   width: -webkit-calc(20% - (30px / 2));
   width: calc(20% - (30px / 2));
 }
-/* line 314, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 308, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .footer-col-3 {
   width: -webkit-calc(45% - (30px / 2));
   width: calc(45% - (30px / 2));
 }
 @media screen and (max-width: 800px) {
-  /* line 320, arreshaSCSS/sass/arreshaTheme.scss */
+  /* line 314, arreshaSCSS/sass/arreshaTheme.scss */
   .blog-style1 .footer-col-1, .blog-style1 .footer-col-2 {
     width: -webkit-calc(50% - (30px / 2));
     width: calc(50% - (30px / 2));
   }
-  /* line 325, arreshaSCSS/sass/arreshaTheme.scss */
+  /* line 319, arreshaSCSS/sass/arreshaTheme.scss */
   .blog-style1 .footer-col-3 {
     width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2));
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 332, arreshaSCSS/sass/arreshaTheme.scss */
+  /* line 326, arreshaSCSS/sass/arreshaTheme.scss */
   .blog-style1 .footer-col {
     float: none;
     width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2));
   }
 }
-/* line 339, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 333, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .page-content {
   padding: 30px 0;
   flex: 1;
 }
-/* line 344, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 338, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .page-heading {
   font-size: 32px;
 }
-/* line 348, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 342, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .post-list-heading {
   font-size: 28px;
 }
-/* line 352, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 346, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .post-list {
   margin-left: 0;
   list-style: none;
 }
-/* line 357, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 351, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .post-list > li {
   margin-bottom: 30px;
 }
-/* line 361, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 355, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .post-meta {
   font-size: 14px;
   color: #828282;
 }
-/* line 366, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 360, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .post-link {
   display: block;
   font-size: 24px;
 }
-/* line 371, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 365, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .post-header {
   margin-bottom: 30px;
 }
-/* line 375, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 369, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .post-title {
   font-size: 42px;
   letter-spacing: -1px;
   line-height: 1;
 }
 @media screen and (max-width: 800px) {
-  /* line 382, arreshaSCSS/sass/arreshaTheme.scss */
+  /* line 376, arreshaSCSS/sass/arreshaTheme.scss */
   .blog-style1 .post-title {
     font-size: 36px;
   }
 }
-/* line 387, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 381, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .post-content {
   margin-bottom: 30px;
 }
-/* line 391, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 385, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .post-content h2 {
   font-size: 32px;
+  line-height: initial;
 }
 @media screen and (max-width: 800px) {
-  /* line 396, arreshaSCSS/sass/arreshaTheme.scss */
+  /* line 391, arreshaSCSS/sass/arreshaTheme.scss */
   .blog-style1 .post-content h2 {
     font-size: 28px;
   }
 }
-/* line 401, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 396, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .post-content h3 {
   font-size: 26px;
 }
 @media screen and (max-width: 800px) {
-  /* line 406, arreshaSCSS/sass/arreshaTheme.scss */
+  /* line 401, arreshaSCSS/sass/arreshaTheme.scss */
   .blog-style1 .post-content h3 {
     font-size: 22px;
   }
 }
-/* line 411, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 406, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .post-content h4 {
   font-size: 20px;
 }
 @media screen and (max-width: 800px) {
-  /* line 416, arreshaSCSS/sass/arreshaTheme.scss */
+  /* line 411, arreshaSCSS/sass/arreshaTheme.scss */
   .blog-style1 .post-content h4 {
     font-size: 18px;
   }
 }
-/* line 421, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 416, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight {
   background: #fff;
 }
-/* line 425, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 420, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlighter-rouge .highlight {
   background: #eef;
 }
-/* line 429, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 424, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .c {
   color: #998;
   font-style: italic;
 }
-/* line 434, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 429, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .err {
   color: #a61717;
   background-color: #e3d2d2;
 }
-/* line 439, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 434, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .k {
   font-weight: bold;
 }
-/* line 443, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 438, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .o {
   font-weight: bold;
 }
-/* line 447, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 442, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .cm {
   color: #998;
   font-style: italic;
 }
-/* line 452, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 447, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .cp {
   color: #999;
   font-weight: bold;
 }
-/* line 457, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 452, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .c1 {
   color: #998;
   font-style: italic;
 }
-/* line 462, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 457, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .cs {
   color: #999;
   font-weight: bold;
   font-style: italic;
 }
-/* line 468, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 463, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .gd {
   color: #000;
   background-color: #fdd;
 }
-/* line 473, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 468, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .gd .x {
   color: #000;
   background-color: #faa;
 }
-/* line 478, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 473, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .ge {
   font-style: italic;
 }
-/* line 482, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 477, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .gr {
   color: #a00;
 }
-/* line 486, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 481, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .gh {
   color: #999;
 }
-/* line 490, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 485, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .gi {
   color: #000;
   background-color: #dfd;
 }
-/* line 495, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 490, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .gi .x {
   color: #000;
   background-color: #afa;
 }
-/* line 500, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 495, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .go {
   color: #888;
 }
-/* line 504, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 499, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .gp {
   color: #555;
 }
-/* line 508, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 503, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .gs {
   font-weight: bold;
 }
-/* line 512, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 507, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .gu {
   color: #aaa;
 }
-/* line 516, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 511, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .gt {
   color: #a00;
 }
-/* line 520, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 515, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .kc {
   font-weight: bold;
 }
-/* line 524, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 519, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .kd {
   font-weight: bold;
 }
-/* line 528, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 523, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .kp {
   font-weight: bold;
 }
-/* line 532, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 527, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .kr {
   font-weight: bold;
 }
-/* line 536, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 531, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .kt {
   color: #458;
   font-weight: bold;
 }
-/* line 541, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 536, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .m {
   color: #099;
 }
-/* line 545, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 540, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .s {
   color: #d14;
 }
-/* line 549, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 544, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .na {
   color: #008080;
 }
-/* line 553, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 548, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .nb {
   color: #0086B3;
 }
-/* line 557, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 552, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .nc {
   color: #458;
   font-weight: bold;
 }
-/* line 562, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 557, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .no {
   color: #008080;
 }
-/* line 566, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 561, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .ni {
   color: #800080;
 }
-/* line 570, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 565, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .ne {
   color: #900;
   font-weight: bold;
 }
-/* line 575, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 570, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .nf {
   color: #900;
   font-weight: bold;
 }
-/* line 580, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 575, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .nn {
   color: #555;
 }
-/* line 584, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 579, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .nt {
   color: #000080;
 }
-/* line 588, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 583, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .nv {
   color: #008080;
 }
-/* line 592, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 587, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .ow {
   font-weight: bold;
 }
-/* line 596, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 591, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .w {
   color: #bbb;
 }
-/* line 600, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 595, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .mf {
   color: #099;
 }
-/* line 604, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 599, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .mh {
   color: #099;
 }
-/* line 608, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 603, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .mi {
   color: #099;
 }
-/* line 612, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 607, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .mo {
   color: #099;
 }
-/* line 616, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 611, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .sb {
   color: #d14;
 }
-/* line 620, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 615, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .sc {
   color: #d14;
 }
-/* line 624, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 619, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .sd {
   color: #d14;
 }
-/* line 628, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 623, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .s2 {
   color: #d14;
 }
-/* line 632, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 627, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .se {
   color: #d14;
 }
-/* line 636, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 631, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .sh {
   color: #d14;
 }
-/* line 640, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 635, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .si {
   color: #d14;
 }
-/* line 644, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 639, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .sx {
   color: #d14;
 }
-/* line 648, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 643, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .sr {
   color: #009926;
 }
-/* line 652, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 647, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .s1 {
   color: #d14;
 }
-/* line 656, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 651, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .ss {
   color: #990073;
 }
-/* line 660, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 655, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .bp {
   color: #999;
 }
-/* line 664, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 659, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .vc {
   color: #008080;
 }
-/* line 668, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 663, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .vg {
   color: #008080;
 }
-/* line 672, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 667, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .vi {
   color: #008080;
 }
-/* line 676, arreshaSCSS/sass/arreshaTheme.scss */
+/* line 671, arreshaSCSS/sass/arreshaTheme.scss */
 .blog-style1 .highlight .il {
   color: #099;
+}
+/* line 675, arreshaSCSS/sass/arreshaTheme.scss */
+.blog-style1 .img-cont {
+  margin-bottom: 20px;
+}
+/* line 679, arreshaSCSS/sass/arreshaTheme.scss */
+.blog-style1 .img-cont img {
+  width: 100%;
+}
+/* line 683, arreshaSCSS/sass/arreshaTheme.scss */
+.blog-style1 .blog-hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 30px 0;
+}
+
+/* line 690, arreshaSCSS/sass/arreshaTheme.scss */
+.new-comment .inputs {
+  display: flex;
+  align-items: center;
+}
+/* line 693, arreshaSCSS/sass/arreshaTheme.scss */
+.new-comment .inputs label {
+  width: auto;
+  margin-right: 10px;
+}
+/* line 697, arreshaSCSS/sass/arreshaTheme.scss */
+.new-comment .inputs textarea {
+  flex: 1;
 }
