@@ -91,10 +91,16 @@ body {
     background-color:transparent;
     padding:0;
     margin-top:0;
+    margin:0;
 }
 #topcartlink a{
     display:block;
-    padding:6px 14px;
+    background: none;
+    padding:0;
+    min-width:44px;
+}
+.header-links li.header-cart{
+    margin:0;
 }
 /*---------- Logo -------------*/
 .logo-img {
@@ -107,8 +113,7 @@ body {
     height:100%;
 }
 .logo-name{
-    margin-left:10px;
-    margin-left:10px;
+    margin-left:-10px;
 }
 /*-----------------------------*/
 .display-flex{
@@ -193,6 +198,7 @@ body {
 }
 .google-search{
     min-width:360px;
+    text-align:left;
 }
   .google-search form.gsc-search-box{
       position:relative;
@@ -259,6 +265,12 @@ body {
 .blog-style1 p{
     text-align:left;
     line-height:2em;
+}
+.blog-style1 .youtube-frame{
+    height:438px;
+}
+.blog-style1.arabic p, .blog-style1.arabic h1, .blog-style1.arabic h2, .blog-style1.arabic h3, .blog-style1.arabic h4, .blog-style1.arabic h5, .blog-style1.arabic h6 {
+  text-align: right;
 }
 .post-body .short-description {
 }
@@ -365,6 +377,7 @@ body {
 }
 .dropdown-cont{
     margin-left:0 !important;
+    position:relative;
 }
 .dropbtn:hover {
   border: 1px solid #ddd;
@@ -386,6 +399,7 @@ body {
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  right:0;
 }
 
   .dropdown-content a {
@@ -480,23 +494,32 @@ body {
   text-align: center;
   margin:0;
 }
-/*-------------- Eu cookie ---------------*/
-
-.eu-cookie-bar-notification {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1050;
-  width: 100vw;
-  min-height: 40px;
-  margin: 0;
-  border-bottom: 1px solid #ccc;
-  box-shadow: 0 0 2px rgba(0,0,0,0.15);
-  background-color: #fff;
-  text-align: center;
-  height:auto;
-  padding:0;
+  .header-logo a{
+    line-height:initial;
+    display:block;
+  }
+.header-logo a h1::after{
+  content:"Beta";
+  position:absolute;
+  font-weight:normal;
+  font-size:0.5em;
 }
+  /*-------------- Eu cookie ---------------*/
+  .eu-cookie-bar-notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100vw;
+    min-height: 40px;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 0 2px rgba(0,0,0,0.15);
+    background-color: #fff;
+    text-align: center;
+    height: auto;
+    padding: 0;
+  }
 
   .eu-cookie-bar-notification .text {
     line-height: 20px;

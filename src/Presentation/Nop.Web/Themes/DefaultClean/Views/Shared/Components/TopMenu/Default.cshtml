@@ -114,6 +114,11 @@
         }
         <li><a href="@Url.RouteUrl("BlogByTag", new {tag = "wood"})">@T("WoodBlog")</a></li>
         <li><a href="@Url.RouteUrl("BlogByTag", new {tag = "tech"})">@T("ComputerAndTech")</a></li>
+        @if (workContext.WorkingLanguage.Rtl)
+        {
+            <li><a href="@Url.RouteUrl("Topic",new { SeName ="youtubelist" })">قوائم يوتيوب</a></li>
+        }
+
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.MobHeaderMenuAfter })
     </ul>
 

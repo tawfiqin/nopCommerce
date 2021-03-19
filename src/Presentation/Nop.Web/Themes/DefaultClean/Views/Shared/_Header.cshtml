@@ -9,15 +9,17 @@
             <script async src="https://cse.google.com/cse.js?cx=007794369060039319169:gmnd7q8qszo"></script>
             <div class="gcse-search"></div>
         </div>
+
         <div class="display-flex align-items-center">
             @await Component.InvokeAsync("TaxTypeSelector")
             @await Component.InvokeAsync("CurrencySelector")
             @await Component.InvokeAsync("HeaderLinks")
-            @await Component.InvokeAsync("LanguageSelector")
+            
 
             @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderSelectors })
         </div>
 
     </div>
+
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderAfter })
 </div>

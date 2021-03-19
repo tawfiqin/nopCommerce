@@ -6,7 +6,15 @@
     Html.AddTitleParts(!string.IsNullOrEmpty(Model.MetaTitle) ? Model.MetaTitle : Model.Title);
     //meta
     Html.AddMetaDescriptionParts(Model.MetaDescription);
-    Html.AddMetaKeywordParts(Model.MetaKeywords);
+    string[] tempMetaKeywords = Model.MetaKeywords.Split(";");//separate meta keywords on open graph elements by ";" 
+    Html.AddMetaKeywordParts(tempMetaKeywords[0]);
+    if (tempMetaKeywords.Length>1)
+    {
+        string[] tempMetaOG = tempMetaKeywords[1].Split(",");
+        string tempOGImage = tempMetaOG[0];//og-image should be first element. 
+        Html.AddHeadCustomParts("<meta property=\"og:image\" content=\"" + tempOGImage.Trim() + "\" />");
+    }
+
     //page class
     Html.AppendPageCssClassParts("html-blogpost-page");
 }
@@ -17,6 +25,7 @@
     @await Component.InvokeAsync("BlogTags")
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.LeftSideColumnBlogAfter })
 }*@
+
 <div class="page blogpost-page blog-wrapper">
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.BlogPostPageTop, additionalData = Model })
     <div class="blog-title">

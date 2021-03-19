@@ -928,8 +928,7 @@ label, label + * {
   .header-links a {
     display: inline-block;
     font-size: 12px; /*reset zeroing*/
-    line-height: 36px;
-    text-transform: uppercase;
+
   }
 
     .header-links a:hover {

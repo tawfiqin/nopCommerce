@@ -24,7 +24,17 @@
 
     <ul>
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderLinksBefore })
-
+        @if (Model.ShoppingCartEnabled)
+        {
+            <li class="header-cart">
+                <div id="topcartlink">
+                    <a href="@Url.RouteUrl("ShoppingCart")">
+                        <span class="cart-label">@T("ShoppingCart")</span>
+                        <span class="cart-qty">@T("ShoppingCart.HeaderQuantity", Model.ShoppingCartItems)</span>
+                    </a>
+                </div>
+            </li>
+        }
         @if (Model.IsAuthenticated)
         {
             <li><a href="@Url.RouteUrl("CustomerInfo")" class="ico-account">@T("Account.MyAccount")@*@Model.CustomerName*@</a></li>
@@ -37,6 +47,7 @@
 
             <li><a href="@Url.RouteUrl("Login", new { returnUrl })" class="ico-login">@T("Account.Login")</a></li>
         }
+
         <li class="dropdown-cont">
             <div class="dropdown">
                 <button onclick="showMenuLinks()" class="dropbtn">
@@ -80,15 +91,9 @@
                         </div>
                     }
 
-                    @if (Model.ShoppingCartEnabled)
-                    {
-                        <div id="topcartlink">
-                            <a href="@Url.RouteUrl("ShoppingCart")" class="ico-cart">
-                                <span class="cart-label">@T("ShoppingCart")</span>
-                                <span class="cart-qty">@T("ShoppingCart.HeaderQuantity", Model.ShoppingCartItems)</span>
-                            </a>
-                        </div>
-                    }
+                <div>
+                    @await Component.InvokeAsync("LanguageSelector")
+                </div>
                 </div>
             </div>
         </li>

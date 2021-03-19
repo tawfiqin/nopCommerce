@@ -1,0 +1,11 @@
+﻿{
+  "Group": "",
+  "FriendlyName": "Home Page Blogs",
+  "SystemName": "Widget.HomeBlogs",
+  "Version": "1.00",
+  "SupportedVersions": [ "4.30" ],
+  "Author": "Tawfiq",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Misc.BlogExtra.dll",
+  "Description": ""
+}
